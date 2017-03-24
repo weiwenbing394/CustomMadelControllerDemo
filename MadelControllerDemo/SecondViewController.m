@@ -8,12 +8,9 @@
 
 #import "SecondViewController.h"
 #import "UIViewController+XWModal.h"
-
-
-@interface SecondViewController ()<UITableViewDelegate,UITableViewDataSource>
-
-
-@end
+#import "SpecWindowView.h"
+#define SCREEN_HEIGHT   [UIScreen mainScreen].bounds.size.height //屏幕高度
+#define SCREEN_WIDTH    [UIScreen mainScreen].bounds.size.width //屏幕宽度
 
 @implementation SecondViewController
 
@@ -21,52 +18,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognizer:)];
-    tap.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:tap];
+    UIButton *cancelButton=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 150)];
+    [cancelButton setBackgroundColor:[UIColor clearColor]];
+    [cancelButton addTarget:self action:@selector(cancel:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:cancelButton];
     
     
-    UITableView *tableView = [UITableView new];
-    tableView.frame = CGRectMake(0, self.view.bounds.size.height - 400, self.view.bounds.size.width, 400);
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
-
+    SpecWindowView * specView = [[NSBundle mainBundle]loadNibNamed:@"SpecWindowView" owner:nil options:nil].firstObject;
+    specView.frame = CGRectMake(0, 150, SCREEN_WIDTH, SCREEN_HEIGHT-150);
+    specView.CallBackWithCloseWindow=^(NSString * type,NSString * goodsId){
+        [self dismissXWModalView];
+    };
+    specView.CallBackWithSiftSelected=^(NSDictionary * dic){
+        NSLog(@"选择的商品:%@",dic);
+    };
+    [self.view addSubview:specView];
 }
 
--(void)tapGestureRecognizer:(UITapGestureRecognizer *)recognizer{
+-(void)cancel:(UIButton *)sender{
     [self dismissXWModalView];
 }
-
-#pragma mark -UITableViewDelegate
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return 50;
-}
-
-#pragma mark -UITableViewDataSource
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return 10;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString *cellID = @"cellID";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell) {
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    }
-    
-    cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
-    cell.textLabel.text = @"这是一条测试";
-    return cell;
-    
-}
-
 
 @end

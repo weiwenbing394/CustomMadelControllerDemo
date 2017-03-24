@@ -26,14 +26,18 @@
     btnNext.frame = CGRectMake((self.view.bounds.size.width - 100)/2, self.view.center.y, 100, 50);
     btnNext.titleLabel.font = [UIFont  boldSystemFontOfSize:14.0f];
     [btnNext setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-    [btnNext setTitle:@"下一个转场" forState:UIControlStateNormal];
+    [btnNext setTitle:@"选择商品" forState:UIControlStateNormal];
     [btnNext addTarget:self action:@selector(presentNext:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnNext];
     
 }
 
 -(void)presentNext:(UIButton *)sender{
-    [self presnetXWViewController:[[SecondViewController alloc] init]];
+    [self presnetXWViewController:[[SecondViewController alloc] init] withOptions:nil completion:^{
+        
+    } dissmissBlock:^{
+        
+    }];
 }
 
 

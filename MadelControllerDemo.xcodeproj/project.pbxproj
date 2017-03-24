@@ -19,6 +19,14 @@
 		5191493F1E83930E004254E5 /* UIViewController+XWModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191493E1E83930E004254E5 /* UIViewController+XWModal.m */; };
 		519149421E83A3A7004254E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 519149411E83A3A7004254E5 /* QuartzCore.framework */; };
 		519149451E84B5EF004254E5 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 519149441E84B5EF004254E5 /* UIViewController+KNSemiModal.m */; };
+		519149541E84EC97004254E5 /* SpecHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 519149491E84EC96004254E5 /* SpecHeadView.m */; };
+		519149551E84EC97004254E5 /* SpecHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5191494A1E84EC96004254E5 /* SpecHeadView.xib */; };
+		519149561E84EC97004254E5 /* SpecLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191494C1E84EC96004254E5 /* SpecLabelCell.m */; };
+		519149571E84EC97004254E5 /* SpecLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5191494D1E84EC96004254E5 /* SpecLabelCell.xib */; };
+		519149581E84EC97004254E5 /* SpecWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5191494F1E84EC96004254E5 /* SpecWindowView.m */; };
+		519149591E84EC97004254E5 /* SpecWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519149501E84EC96004254E5 /* SpecWindowView.xib */; };
+		5191495A1E84EC97004254E5 /* testJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 519149511E84EC97004254E5 /* testJson.txt */; };
+		5191495B1E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,18 @@
 		519149411E83A3A7004254E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		519149431E84B5EF004254E5 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
 		519149441E84B5EF004254E5 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		519149481E84EC96004254E5 /* SpecHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecHeadView.h; sourceTree = "<group>"; };
+		519149491E84EC96004254E5 /* SpecHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecHeadView.m; sourceTree = "<group>"; };
+		5191494A1E84EC96004254E5 /* SpecHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecHeadView.xib; sourceTree = "<group>"; };
+		5191494B1E84EC96004254E5 /* SpecLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecLabelCell.h; sourceTree = "<group>"; };
+		5191494C1E84EC96004254E5 /* SpecLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecLabelCell.m; sourceTree = "<group>"; };
+		5191494D1E84EC96004254E5 /* SpecLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecLabelCell.xib; sourceTree = "<group>"; };
+		5191494E1E84EC96004254E5 /* SpecWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecWindowView.h; sourceTree = "<group>"; };
+		5191494F1E84EC96004254E5 /* SpecWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecWindowView.m; sourceTree = "<group>"; };
+		519149501E84EC96004254E5 /* SpecWindowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpecWindowView.xib; sourceTree = "<group>"; };
+		519149511E84EC97004254E5 /* testJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testJson.txt; sourceTree = "<group>"; };
+		519149521E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +134,7 @@
 		519149011E836B58004254E5 /* MadelControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				519149471E84EC74004254E5 /* 选择商品页面 */,
 				519149391E836BC5004254E5 /* Tools */,
 				519149381E836BBA004254E5 /* Controller */,
 				519149051E836B58004254E5 /* AppDelegate.h */,
@@ -181,6 +202,25 @@
 				519149411E83A3A7004254E5 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		519149471E84EC74004254E5 /* 选择商品页面 */ = {
+			isa = PBXGroup;
+			children = (
+				519149481E84EC96004254E5 /* SpecHeadView.h */,
+				519149491E84EC96004254E5 /* SpecHeadView.m */,
+				5191494A1E84EC96004254E5 /* SpecHeadView.xib */,
+				5191494B1E84EC96004254E5 /* SpecLabelCell.h */,
+				5191494C1E84EC96004254E5 /* SpecLabelCell.m */,
+				5191494D1E84EC96004254E5 /* SpecLabelCell.xib */,
+				5191494E1E84EC96004254E5 /* SpecWindowView.h */,
+				5191494F1E84EC96004254E5 /* SpecWindowView.m */,
+				519149501E84EC96004254E5 /* SpecWindowView.xib */,
+				519149511E84EC97004254E5 /* testJson.txt */,
+				519149521E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.h */,
+				519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = "选择商品页面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				519149121E836B58004254E5 /* LaunchScreen.storyboard in Resources */,
+				519149591E84EC97004254E5 /* SpecWindowView.xib in Resources */,
+				519149551E84EC97004254E5 /* SpecHeadView.xib in Resources */,
+				519149571E84EC97004254E5 /* SpecLabelCell.xib in Resources */,
+				5191495A1E84EC97004254E5 /* testJson.txt in Resources */,
 				5191490F1E836B58004254E5 /* Assets.xcassets in Resources */,
 				5191490D1E836B58004254E5 /* Main.storyboard in Resources */,
 			);
@@ -319,9 +363,13 @@
 				519149371E836B93004254E5 /* SecondViewController.m in Sources */,
 				519149451E84B5EF004254E5 /* UIViewController+KNSemiModal.m in Sources */,
 				5191490A1E836B58004254E5 /* ViewController.m in Sources */,
+				519149541E84EC97004254E5 /* SpecHeadView.m in Sources */,
+				5191495B1E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				5191493F1E83930E004254E5 /* UIViewController+XWModal.m in Sources */,
+				519149561E84EC97004254E5 /* SpecLabelCell.m in Sources */,
 				519149071E836B58004254E5 /* AppDelegate.m in Sources */,
 				519149041E836B58004254E5 /* main.m in Sources */,
+				519149581E84EC97004254E5 /* SpecWindowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +601,7 @@
 				5191492E1E836B58004254E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5191492F1E836B58004254E5 /* Build configuration list for PBXNativeTarget "MadelControllerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +610,7 @@
 				519149311E836B58004254E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		519149321E836B58004254E5 /* Build configuration list for PBXNativeTarget "MadelControllerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +619,7 @@
 				519149341E836B58004254E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
