@@ -17,10 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *mainVC = [ViewController new];
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:mainVC];
-    [self.window setRootViewController:navigation];
-    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

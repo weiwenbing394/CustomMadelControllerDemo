@@ -27,6 +27,7 @@
 		519149591E84EC97004254E5 /* SpecWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 519149501E84EC96004254E5 /* SpecWindowView.xib */; };
 		5191495A1E84EC97004254E5 /* testJson.txt in Resources */ = {isa = PBXBuildFile; fileRef = 519149511E84EC97004254E5 /* testJson.txt */; };
 		5191495B1E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */; };
+		51F3AC951E88A924000D5FAC /* MXPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 51F3AC941E88A924000D5FAC /* MXPullDownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		519149511E84EC97004254E5 /* testJson.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testJson.txt; sourceTree = "<group>"; };
 		519149521E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
 		519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		51F3AC931E88A924000D5FAC /* MXPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXPullDownMenu.h; sourceTree = "<group>"; };
+		51F3AC941E88A924000D5FAC /* MXPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXPullDownMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		519149011E836B58004254E5 /* MadelControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				51F3AC921E88A8DE000D5FAC /* 切换选择 */,
 				519149471E84EC74004254E5 /* 选择商品页面 */,
 				519149391E836BC5004254E5 /* Tools */,
 				519149381E836BBA004254E5 /* Controller */,
@@ -221,6 +225,15 @@
 				519149531E84EC97004254E5 /* UICollectionViewLeftAlignedLayout.m */,
 			);
 			path = "选择商品页面";
+			sourceTree = "<group>";
+		};
+		51F3AC921E88A8DE000D5FAC /* 切换选择 */ = {
+			isa = PBXGroup;
+			children = (
+				51F3AC931E88A924000D5FAC /* MXPullDownMenu.h */,
+				51F3AC941E88A924000D5FAC /* MXPullDownMenu.m */,
+			);
+			path = "切换选择";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +382,7 @@
 				519149561E84EC97004254E5 /* SpecLabelCell.m in Sources */,
 				519149071E836B58004254E5 /* AppDelegate.m in Sources */,
 				519149041E836B58004254E5 /* main.m in Sources */,
+				51F3AC951E88A924000D5FAC /* MXPullDownMenu.m in Sources */,
 				519149581E84EC97004254E5 /* SpecWindowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
